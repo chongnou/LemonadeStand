@@ -48,7 +48,6 @@ namespace Lemonadestand
         {
 
             Console.WriteLine("The forcast for the next 7 days are: ");
-            Console.ReadLine();
 
         }
     }

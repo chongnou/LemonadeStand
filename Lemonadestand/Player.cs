@@ -8,25 +8,35 @@ namespace Lemonadestand
 {
     public class Player
     {
-        public string choice;
+        public Money money;
 
         public Player()
         {
-
+            money = new Money();
         }
 
+        public void ChoosePitchersAndCups()
+        {
+            ChoosePitchers();
+            ChooseCups();
+
+            Console.ReadLine();
+        }
         // choose how many pitchers
         public void ChoosePitchers()
         {
-            Console.WriteLine("Choose how many pitchers you want to make.");
-            choice = Console.ReadLine();
+
+            Console.WriteLine(money.Money);
+            Console.WriteLine("\nPlease choose how many pitchers you want. 1 pitcher = $2");
+
+        
+            
         }
 
         // choose how many cups
         public void ChooseCups()
         {
             Console.WriteLine("Choose how many cups you want to sell");
-            choice = Console.ReadLine();
         }
     }
 }

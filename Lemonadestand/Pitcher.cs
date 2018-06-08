@@ -10,7 +10,7 @@ namespace Lemonadestand
     {
         public Pitcher()
         {
-            Pitcher = 3;
+            Pitcher = 2;
             name = "pitcher";
         }
     }

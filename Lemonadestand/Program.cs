@@ -12,12 +12,6 @@ namespace Lemonadestand
         {
             Game rungame = new Game();
             rungame.RunGame();
-
-
-           
-            
-            
-            
         }
     }
 }

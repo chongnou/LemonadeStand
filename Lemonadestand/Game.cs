@@ -10,11 +10,13 @@ namespace Lemonadestand
     {
         public Weather weather;
         public Days days;
+        public Player player;
 
         public Game()
         {
             weather = new Weather();
             days = new Days();
+            player = new Player();
         }
 
         public void RunGame()
@@ -28,18 +30,23 @@ namespace Lemonadestand
             Display7DayForcast();
             days.Display7DayForcast();
 
+            PlayerChoosePitcherAndCups();
+            player.ChoosePitchersAndCups();
+
         }
 
         public void DisplayWelcome()
         {
             Console.WriteLine("You are playing Lemonade Stand!");
             Console.WriteLine("Try to make as much money as you can!");
+            Console.ReadLine();
+            Console.Clear();
 
         }
 
         public void DisplayWeather()
         {
-            Console.WriteLine("\nToday's forcast is: " + weather.temperature + " and " + weather.condition);
+            Console.WriteLine("Today's forcast is: " + weather.temperature + " and " + weather.condition);
             Console.ReadLine();
 
         }
@@ -49,6 +56,12 @@ namespace Lemonadestand
 
             Console.WriteLine("The forcast for the next 7 days are: ");
 
+        }
+
+        public void PlayerChoosePitcherAndCups()
+        {
+            Console.Clear();
+            Console.WriteLine("Start money:");
         }
     }
 }

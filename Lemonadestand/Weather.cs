@@ -25,13 +25,13 @@ namespace Lemonadestand
             switch (randomNumber)
             {
                 case 1:
-                    temperature = "Hot";
+                    temperature = "90°";
                     break;
                 case 2:
-                    temperature = "Warm";
+                    temperature = "70°";
                     break;
                 case 3:
-                    temperature = "Cold";
+                    temperature = "50°";
                     break;
             }
         }

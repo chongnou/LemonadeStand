@@ -21,17 +21,16 @@ namespace Lemonadestand
 
         public void ChanceToBuyTemperature(Weather weather)
         {
-            Random rnd = new Random();
 
-            if (weather.temperature == "Hot")
+            if (weather.temperature == "90°")
             {
                 // people buy more
             }
-            else if (weather.temperature == "Warm")
+            else if (weather.temperature == "70°")
             {
                 // people buy less
             }
-            else if (weather.temperature == "Cold")
+            else if (weather.temperature == "50°")
             {
                 // 1-3 customers
             }
@@ -53,6 +52,11 @@ namespace Lemonadestand
             {
                 // 1-3 customers
             }
+        }
+
+        public void CustomerChanceOfBuying()
+        {
+
         }
     }
 }

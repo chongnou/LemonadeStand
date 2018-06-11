@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace Lemonadestand
 {
-    public class Days
+    public class Forcast
     {
         Random rnd = new Random();
         public Weather weather;
 
         // make temp and conditon appear for the game day
 
-        public Days()
+        public Forcast()
         {
             weather = new Weather();
             weather.SetCondition();
             weather.SetTemp();
         }
-        
+
         public void Display7DayForcast()
         {
             Monday();
@@ -39,7 +39,7 @@ namespace Lemonadestand
         {
             string temperature = "";
             string condition = "";
-            
+
             int randomNumber = rnd.Next(1, 4);
 
             switch (randomNumber)
@@ -75,7 +75,7 @@ namespace Lemonadestand
         {
             string temperature = "";
             string condition = "";
-            
+
             int randomNumber = rnd.Next(1, 4);
 
             switch (randomNumber)
@@ -111,7 +111,7 @@ namespace Lemonadestand
         {
             string temperature = "";
             string condition = "";
-            
+
             int randomNumber = rnd.Next(1, 4);
 
             switch (randomNumber)
@@ -147,7 +147,7 @@ namespace Lemonadestand
         {
             string temperature = "";
             string condition = "";
-            
+
             int randomNumber = rnd.Next(1, 4);
 
             switch (randomNumber)
@@ -183,7 +183,7 @@ namespace Lemonadestand
         {
             string temperature = "";
             string condition = "";
-            
+
             int randomNumber = rnd.Next(1, 4);
 
             switch (randomNumber)
@@ -218,7 +218,7 @@ namespace Lemonadestand
         {
             string temperature = "";
             string condition = "";
-            
+
             int randomNumber = rnd.Next(1, 4);
 
             switch (randomNumber)
@@ -254,7 +254,7 @@ namespace Lemonadestand
         {
             string temperature = "";
             string condition = "";
-            
+
             int randomNumber = rnd.Next(1, 4);
 
             switch (randomNumber)

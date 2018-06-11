@@ -8,52 +8,53 @@ namespace Lemonadestand
 {
     public class Customer
     {
-        // Random customers depending on weather
-        //  More customers on sunny days
-        // Less customers on cloudy days
-        // Couple customers for raining days
-
-        double percent = 100;
-        double temperatureProbability;
-        double conditionProbability;
+        public Weather weather;
+        
 
         public Customer()
         {
+            weather = new Weather();
 
         }
 
-        public void ChanceToBuyTemperature(Weather weather)
+        public void CustomerBuying()
+        {
+            ChanceToBuyTemperature();
+            ChanceToBuyCondition();
+        }
+
+        public void ChanceToBuyTemperature()
         {
 
             if (weather.temperature == "90°")
             {
-                temperatureProbability = percent * 1.75;
+
             }
             else if (weather.temperature == "70°")
             {
-                temperatureProbability = percent * 1.50;
+
             }
             else if (weather.temperature == "50°")
             {
-                temperatureProbability = percent * 1.00;
+
             }
         }
 
-        public void ChanceToBuyCondition(Weather weather)
+        public void ChanceToBuyCondition()
         {
             Random rnd = new Random();
 
             if (weather.condition == "Sunny")
             {
-                conditionProbability = percent * 1.85;
+
             }
             else if (weather.condition == "Cloudy")
             {
-                conditionProbability = percent * 1.45;
+
             }
             else if (weather.condition == "Raining")
             {
-                conditionProbability = percent * 1.00;
+
             }
         }
 

@@ -9,13 +9,13 @@ namespace Lemonadestand
     public class Game
     {
         public Weather weather;
-        public Days days;
+        public Forcast forcast;
         public Player player;
 
         public Game()
         {
             weather = new Weather();
-            days = new Days();
+            forcast = new Forcast();
             player = new Player();
         }
 
@@ -28,22 +28,17 @@ namespace Lemonadestand
             DisplayWeather();
 
             Display7DayForcast();
-            days.Display7DayForcast();
+            forcast.Display7DayForcast();
 
             DisplayWallet();
 
             PlayerChoosePitcherAndCups();
             player.ChoosePitchersAndCups();
 
-
-
-
-
-
-
+            
 
             //sell lemonade
-            days = new Days();
+            forcast = new Forcast();
 
 
 
@@ -68,7 +63,7 @@ namespace Lemonadestand
         public void Display7DayForcast()
         {
 
-            Console.WriteLine("The forcast for the next 7 days are: ");
+            Console.WriteLine("The forcast for the next 7 days are: \n");
 
         }
 

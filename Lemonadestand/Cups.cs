@@ -11,7 +11,7 @@ namespace Lemonadestand
         public Cups()
         {
             price = .10;
-            name = "pitcher";
+            name = "cups";
         }
     }
 }

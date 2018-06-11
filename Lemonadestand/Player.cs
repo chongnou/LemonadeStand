@@ -34,7 +34,7 @@ namespace Lemonadestand
             if (userInput == "1")
             {
                 Console.WriteLine("Cost = $2");
-
+                Console.WriteLine();
             }
             else if (userInput == "2")
             {

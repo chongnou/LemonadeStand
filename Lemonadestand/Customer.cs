@@ -13,7 +13,9 @@ namespace Lemonadestand
         // Less customers on cloudy days
         // Couple customers for raining days
 
-
+        double percent = 100;
+        double temperatureProbability;
+        double conditionProbability;
 
         public Customer()
         {
@@ -25,15 +27,15 @@ namespace Lemonadestand
 
             if (weather.temperature == "90°")
             {
-                // people buy more
+                temperatureProbability = percent * 1.75;
             }
             else if (weather.temperature == "70°")
             {
-                // people buy less
+                temperatureProbability = percent * 1.50;
             }
             else if (weather.temperature == "50°")
             {
-                // 1 - 3 customers
+                temperatureProbability = percent * 1.00;
             }
         }
 
@@ -43,15 +45,15 @@ namespace Lemonadestand
 
             if (weather.condition == "Sunny")
             {
-                // people buy more
+                conditionProbability = percent * 1.85;
             }
             else if (weather.condition == "Cloudy")
             {
-                // people buy less
+                conditionProbability = percent * 1.45;
             }
             else if (weather.condition == "Raining")
             {
-                // 1 - 3 customers
+                conditionProbability = percent * 1.00;
             }
         }
 

@@ -22,13 +22,14 @@ namespace Lemonadestand
             money = money - amount;
         }
 
+
         public bool CheckIfBankrupt()
         {
+
             if (money < amount)
             {
                 bankrupt = true;
-                Console.WriteLine("You don't have enough money.");
-                Console.ReadLine();
+                Console.WriteLine("You don't have enough money. Try again.");
             }
             return bankrupt;
         }

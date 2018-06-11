@@ -26,9 +26,9 @@ namespace Lemonadestand
         public void ChoosePitchers()
         {
             string userInput;
-            
-            Console.WriteLine("\nPlease choose how many pitchers you want. 1 pitcher = $2");
-            Console.WriteLine("Remember to buy cups also!");
+
+            Console.WriteLine("\nPlease choose how many pitchers you want to purchase. 1 pitcher = $2");
+            Console.WriteLine("7 cups = 1 pitcher.");
             userInput = Console.ReadLine();
 
 
@@ -36,80 +36,118 @@ namespace Lemonadestand
             {
                 Console.WriteLine("Cost = $2");
                 wallet.money -= 2;
-                wallet.CheckIfBankrupt();
-                Console.WriteLine("Money left: " + wallet.money);
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    Player ChoosePitchers = new Player();
+                }
 
             }
             else if (userInput == "2")
             {
                 Console.WriteLine("Cost = $4");
                 wallet.money -= 4;
-                wallet.CheckIfBankrupt();
-                Console.WriteLine("Money left: " + wallet.money);
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    Player ChoosePitchers = new Player();
+                }
 
             }
             else if (userInput == "3")
             {
                 Console.WriteLine("Cost = $6");
                 wallet.money -= 6;
-                wallet.CheckIfBankrupt();
-                Console.WriteLine("Money left: " + wallet.money);
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    Player ChoosePitchers = new Player();
+                }
 
             }
             else if (userInput == "4")
             {
                 Console.WriteLine("Cost = $8");
                 wallet.money -= 8;
-                wallet.CheckIfBankrupt();
-                Console.WriteLine("Money left: " + wallet.money);
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    Player ChoosePitchers = new Player();
+                }
 
             }
             else if (userInput == "5")
             {
                 Console.WriteLine("Cost = $10");
                 wallet.money -= 10;
-                wallet.CheckIfBankrupt();
-                Console.WriteLine("Money left: " + wallet.money);
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    Player ChoosePitchers = new Player();
+                }
 
             }
             else if (userInput == "6")
             {
                 Console.WriteLine("Cost = $12");
                 wallet.money -= 12;
-                wallet.CheckIfBankrupt();
-                Console.WriteLine("Money left: " + wallet.money);
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    Player ChoosePitchers = new Player();
+                }
 
             }
             else if (userInput == "7")
             {
                 Console.WriteLine("Cost = $14");
                 wallet.money -= 14;
-                wallet.CheckIfBankrupt();
-                Console.WriteLine("Money left: " + wallet.money);
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    Player ChoosePitchers = new Player();
+                }
 
             }
             else if (userInput == "8")
             {
                 Console.WriteLine("Cost = $16");
                 wallet.money -= 16;
-                wallet.CheckIfBankrupt();
-                Console.WriteLine("Money left: " + wallet.money);
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    Player ChoosePitchers = new Player();
+                }
             }
             else if (userInput == "9")
             {
                 Console.WriteLine("Cost = $18");
                 wallet.money -= 18;
-                wallet.CheckIfBankrupt();
-                Console.WriteLine("Money left: " + wallet.money);
-
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    Player ChoosePitchers = new Player();
+                }
             }
             else if (userInput == "10")
             {
                 Console.WriteLine("Cost = $20");
                 wallet.money -= 20;
-                wallet.CheckIfBankrupt();
-                Console.WriteLine("Money left: " + wallet.money);
-
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    Player ChoosePitchers = new Player();
+                }
             }
             else
             {
@@ -117,13 +155,12 @@ namespace Lemonadestand
             }
         }
 
-        // choose how many cups
         public void ChooseCups()
         {
             Console.WriteLine("\nChoose how many cups you want to sell. 1 cup = 10¢");
 
             string userInput;
-            
+
             userInput = Console.ReadLine();
 
 
@@ -131,81 +168,168 @@ namespace Lemonadestand
             {
                 Console.WriteLine("Cost = 10¢");
                 wallet.money -= .10;
-                wallet.CheckIfBankrupt();
-                Console.WriteLine("Money left: " + wallet.money);
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    Player ChoosePitchers = new Player();
+                }
 
             }
             else if (userInput == "2")
             {
                 Console.WriteLine("Cost = 20¢");
                 wallet.money -= .20;
-                wallet.CheckIfBankrupt();
-                Console.WriteLine("Money left: " + wallet.money);
-
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    Player ChoosePitchers = new Player();
+                }
             }
             else if (userInput == "3")
             {
                 Console.WriteLine("Cost = 30¢");
                 wallet.money -= .30;
-                wallet.CheckIfBankrupt();
-                Console.WriteLine("Money left: " + wallet.money);
-
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    Player ChoosePitchers = new Player();
+                }
             }
             else if (userInput == "4")
             {
                 Console.WriteLine("Cost = 40¢");
                 wallet.money -= .40;
-                wallet.CheckIfBankrupt();
-                Console.WriteLine("Money left: " + wallet.money);
-
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    Player ChoosePitchers = new Player();
+                }
             }
             else if (userInput == "5")
             {
                 Console.WriteLine("Cost = 50¢");
                 wallet.money -= .50;
-                wallet.CheckIfBankrupt();
-                Console.WriteLine("Money left: " + wallet.money);
-
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    Player ChoosePitchers = new Player();
+                }
             }
             else if (userInput == "6")
             {
                 Console.WriteLine("Cost = 60¢");
                 wallet.money -= .60;
-                wallet.CheckIfBankrupt();
-                Console.WriteLine("Money left: " + wallet.money);
-
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    Player ChoosePitchers = new Player();
+                }
             }
             else if (userInput == "7")
             {
                 Console.WriteLine("Cost = 70¢");
                 wallet.money -= .70;
-                wallet.CheckIfBankrupt();
-                Console.WriteLine("Money left: " + wallet.money);
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    Player ChoosePitchers = new Player();
+                }
 
             }
             else if (userInput == "8")
             {
                 Console.WriteLine("Cost = 80¢");
                 wallet.money -= .80;
-                wallet.CheckIfBankrupt();
-                Console.WriteLine("Money left: " + wallet.money);
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    Player ChoosePitchers = new Player();
+                }
             }
             else if (userInput == "9")
             {
                 Console.WriteLine("Cost = 90¢");
                 wallet.money -= .90;
-                wallet.CheckIfBankrupt();
-                Console.WriteLine("Money left: " + wallet.money);
-
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    Player ChoosePitchers = new Player();
+                }
             }
             else if (userInput == "10")
             {
                 Console.WriteLine("Cost = $1");
                 wallet.money -= 1;
-                wallet.CheckIfBankrupt();
-                Console.WriteLine("Money left: " + wallet.money);
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    Player ChoosePitchers = new Player();
+                }
 
             }
+            else
+            {
+                Console.WriteLine("Try again.");
+            }
+        }
+
+        public void MakeLemonade()
+        {
+            string userInput;
+
+            Console.WriteLine("First, we have to make the lemonade!");
+            Console.WriteLine("It takes 2 lemons, 4 sugars, and 4 ice to make a pitcher of lemonade.");
+            Console.WriteLine("1 lemon = 15¢. 1 sugar = 5¢. 1 ice = 10¢");
+            Console.WriteLine("Starting money: $" + wallet.money);
+            Console.WriteLine("How much lemonade do you want to make? Remember to save enough money to buy pitchers and cups!");
+            userInput = Console.ReadLine();
+
+            if (userInput == "1")
+            {
+                Console.WriteLine("Cost = 90¢");
+                wallet.money -= .90;
+                wallet.CheckIfBankrupt();
+                Console.WriteLine("Money left: $" + wallet.money);
+            }
+            else if (userInput == "2")
+            {
+                Console.WriteLine("Cost = $1.80");
+                wallet.money -= 1.80;
+                wallet.CheckIfBankrupt();
+                Console.WriteLine("Money left: $" + wallet.money);
+            }
+            else if (userInput == "3")
+            {
+                Console.WriteLine("Cost = $2.70");
+                wallet.money -= 2.80;
+                wallet.CheckIfBankrupt();
+                Console.WriteLine("Money left: $" + wallet.money);
+            }
+            else if (userInput == "4")
+            {
+                Console.WriteLine("Cost = $3.60");
+                wallet.money -= 3.60;
+                wallet.CheckIfBankrupt();
+                Console.WriteLine("Money left: $" + wallet.money);
+            }
+            else if (userInput == "5")
+            {
+                Console.WriteLine("Cost = $4.50");
+                wallet.money -= 4.50;
+                wallet.CheckIfBankrupt();
+                Console.WriteLine("Money left: $" + wallet.money);
+            }
+
         }
     }
 }

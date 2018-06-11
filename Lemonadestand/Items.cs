@@ -11,8 +11,10 @@ namespace Lemonadestand
         public string name;
         public double price;
 
+
         public Items()
         {
+
 
         }
     }

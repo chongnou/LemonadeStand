@@ -11,12 +11,14 @@ namespace Lemonadestand
         public Weather weather;
         public Forcast forcast;
         public Player player;
+        public Items items;
 
         public Game()
         {
             weather = new Weather();
             forcast = new Forcast();
             player = new Player();
+            items = new Items();
         }
 
         public void RunGame()
@@ -29,6 +31,8 @@ namespace Lemonadestand
 
             Display7DayForcast();
             forcast.Display7DayForcast();
+            
+            player.MakeLemonade();
 
             DisplayWallet();
 
@@ -69,7 +73,7 @@ namespace Lemonadestand
 
         public void DisplayWallet()
         {
-            Console.WriteLine("Starting money:" + player.wallet.money);
+            Console.WriteLine("\nToday's forcast: " + weather.temperature + " and " + weather.condition);
         }
 
         public void PlayerChoosePitcherAndCups()

@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace Lemonadestand
 {
-    public class Pitcher : Items
+    public class Wallet
     {
-        public Pitcher()
+        public double money;
+
+        public Wallet()
         {
-            price = 2;
-            name = "pitcher";
+            money = 10;
         }
     }
 }

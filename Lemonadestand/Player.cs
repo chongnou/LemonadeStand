@@ -8,11 +8,11 @@ namespace Lemonadestand
 {
     public class Player
     {
-        public Money money;
+        public Wallet wallet;
 
         public Player()
         {
-            money = new Money();
+            wallet = new Wallet();
         }
 
         public void ChoosePitchersAndCups()
@@ -25,12 +25,57 @@ namespace Lemonadestand
         // choose how many pitchers
         public void ChoosePitchers()
         {
-
-            Console.WriteLine(money.Money);
-            Console.WriteLine("\nPlease choose how many pitchers you want. 1 pitcher = $2");
-
-        
+            string userInput;
             
+            Console.WriteLine("\nPlease choose how many pitchers you want. 1 pitcher = $2");
+            userInput = Console.ReadLine();
+
+
+            if (userInput == "1")
+            {
+                Console.WriteLine("Cost = $2");
+
+            }
+            else if (userInput == "2")
+            {
+                Console.WriteLine("Cost = $4");
+            }
+            else if (userInput == "3")
+            {
+                Console.WriteLine("Cost = $6");
+            }
+            else if (userInput == "4")
+            {
+                Console.WriteLine("Cost = $8");
+            }
+            else if (userInput == "5")
+            {
+                Console.WriteLine("Cost = $10");
+            }
+            else if (userInput == "6")
+            {
+                Console.WriteLine("Cost = $12");
+            }
+            else if (userInput == "7")
+            {
+                Console.WriteLine("Cost = $14");
+            }
+            else if (userInput == "8")
+            {
+                Console.WriteLine("Cost = $16");
+            }
+            else if (userInput == "9")
+            {
+                Console.WriteLine("Cost = $18");
+            }
+            else if (userInput == "10")
+            {
+                Console.WriteLine("Cost = $20");
+            }
+            else
+            {
+                Console.WriteLine("Invalid Input, try again.");
+            }
         }
 
         // choose how many cups

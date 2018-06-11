@@ -30,8 +30,22 @@ namespace Lemonadestand
             Display7DayForcast();
             days.Display7DayForcast();
 
+            DisplayWallet();
+
             PlayerChoosePitcherAndCups();
             player.ChoosePitchersAndCups();
+
+
+
+
+
+
+
+
+            //sell lemonade
+            days = new Days();
+
+
 
         }
 
@@ -58,10 +72,14 @@ namespace Lemonadestand
 
         }
 
+        public void DisplayWallet()
+        {
+            Console.WriteLine("Starting money:" + player.wallet.money);
+        }
+
         public void PlayerChoosePitcherAndCups()
         {
-            Console.Clear();
-            Console.WriteLine("Start money:");
+
         }
     }
 }

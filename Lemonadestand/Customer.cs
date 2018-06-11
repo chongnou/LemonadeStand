@@ -8,11 +8,12 @@ namespace Lemonadestand
 {
     public class Customer
     {
-        //Random customers depending on weather
-        //More customers on sunny days
-        //Less customers on cloudy days
-        //Couple customers for raining days
-        
+        // Random customers depending on weather
+        //  More customers on sunny days
+        // Less customers on cloudy days
+        // Couple customers for raining days
+
+
 
         public Customer()
         {
@@ -32,7 +33,7 @@ namespace Lemonadestand
             }
             else if (weather.temperature == "50°")
             {
-                // 1-3 customers
+                // 1 - 3 customers
             }
         }
 
@@ -50,7 +51,7 @@ namespace Lemonadestand
             }
             else if (weather.condition == "Raining")
             {
-                // 1-3 customers
+                // 1 - 3 customers
             }
         }
 

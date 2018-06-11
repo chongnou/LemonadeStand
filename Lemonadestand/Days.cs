@@ -9,10 +9,15 @@ namespace Lemonadestand
     public class Days
     {
         Random rnd = new Random();
+        public Weather weather;
+
+        // make temp and conditon appear for the game day
 
         public Days()
         {
-
+            weather = new Weather();
+            weather.SetCondition();
+            weather.SetTemp();
         }
         
         public void Display7DayForcast()
@@ -26,6 +31,7 @@ namespace Lemonadestand
             Sunday();
 
             Console.ReadLine();
+            Console.Clear();
 
         }
 

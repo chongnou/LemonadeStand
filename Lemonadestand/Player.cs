@@ -9,7 +9,7 @@ namespace Lemonadestand
     public class Player
     {
         public Wallet wallet;
-        List<Cups> cups;
+        public List<Cups> cups;
 
         public Player()
         {

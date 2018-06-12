@@ -33,5 +33,10 @@ namespace Lemonadestand
             }
             return bankrupt;
         }
+
+        public void Reset()
+        {
+
+        }
     }
 }

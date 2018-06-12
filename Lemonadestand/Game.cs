@@ -44,7 +44,7 @@ namespace Lemonadestand
 
             GenerateCustomers();
             Customer customer = new Customer();
-            customer.CustomerBuying(weather, customers);
+            customer.CustomerBuying(weather, customers, player);
             
         }
 

@@ -8,57 +8,65 @@ namespace Lemonadestand
 {
     public class Customer
     {
-        public Weather weather;
+        bool boughtLemonade = false;
         
-
         public Customer()
         {
-            weather = new Weather();
+            
 
         }
 
-        public void CustomerBuying()
+        public void CustomerBuying(Weather weather, List<Customer> customers)
         {
-            ChanceToBuyTemperature();
-            ChanceToBuyCondition();
+            ChanceToBuyTemperature(weather, customers);
+            ChanceToBuyCondition(weather, customers);
+
+            Console.ReadLine();
         }
 
-        public void ChanceToBuyTemperature()
+        
+
+        public void ChanceToBuyTemperature(Weather weather, List<Customer> customers)
         {
 
             if (weather.temperature == "90°")
             {
+                for (int i = 0; i <= customers.Count; i++)
+                {
+                    //customer buys lemonade
+                    //check if player ran out of cups
 
+                    customers[i].boughtLemonade = true;
+                }
             }
             else if (weather.temperature == "70°")
             {
-
+                for (int i = 0; i <= customers.Count; i++);
             }
             else if (weather.temperature == "50°")
             {
-
+                for (int i = 0; i <= customers.Count; i++);
             }
         }
 
-        public void ChanceToBuyCondition()
+        public void ChanceToBuyCondition(Weather weather, List<Customer> customers)
         {
-            Random rnd = new Random();
 
             if (weather.condition == "Sunny")
             {
-
+                for (int i = 0; i <= customers.Count; i++);
             }
             else if (weather.condition == "Cloudy")
             {
-
+                for (int i = 0; i <= customers.Count; i++);
             }
             else if (weather.condition == "Raining")
             {
-
+                for (int i = 0; i <= customers.Count; i++);
             }
         }
-
-        public void CustomerChanceOfBuying()
+        
+        public void Buy()
         {
 
         }

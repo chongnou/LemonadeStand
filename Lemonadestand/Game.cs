@@ -11,6 +11,7 @@ namespace Lemonadestand
         public Weather weather;
         public Forcast forcast;
         public Player player;
+        public List<Customer> customers;
         public Items items;
 
         public Game()
@@ -18,11 +19,13 @@ namespace Lemonadestand
             weather = new Weather();
             forcast = new Forcast();
             player = new Player();
+            customers = new List<Customer>();
             items = new Items();
         }
 
         public void RunGame()
         {
+            
             DisplayWelcome();
 
             weather.SetTemp();
@@ -34,18 +37,15 @@ namespace Lemonadestand
             
             player.MakeLemonade();
 
-            DisplayWallet();
-
-            PlayerChoosePitcherAndCups();
-            player.ChoosePitchersAndCups();
-
+            DisplayTodayForcast();
             
+            player.ChoosePitchersAndCups();
+            player.SetPrice();
 
-            //sell lemonade
-            forcast = new Forcast();
-
-
-
+            GenerateCustomers();
+            Customer customer = new Customer();
+            customer.CustomerBuying(weather, customers);
+            
         }
 
         public void DisplayWelcome()
@@ -71,14 +71,18 @@ namespace Lemonadestand
 
         }
 
-        public void DisplayWallet()
+        public void DisplayTodayForcast()
         {
             Console.WriteLine("\nToday's forcast: " + weather.temperature + " and " + weather.condition);
         }
 
-        public void PlayerChoosePitcherAndCups()
+        public void GenerateCustomers()
         {
-
+            for(int i = 0; i < 50; i++)
+            {
+                Customer customer = new Customer();
+                customers.Add(customer);
+            }
         }
     }
 }

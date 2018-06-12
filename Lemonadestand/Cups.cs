@@ -8,10 +8,12 @@ namespace Lemonadestand
 {
     public class Cups : Items
     {
+        public double priceToSell;
         public Cups()
         {
             price = .10;
             name = "cups";
+            priceToSell = 0;
         }
     }
 }

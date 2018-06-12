@@ -159,7 +159,7 @@ namespace Lemonadestand
 
         public void ChooseCups()
         {
-            Console.WriteLine("\nChoose how many cups you want to sell. 1 cup = 10¢");
+            Console.WriteLine("\nChoose how many cups you want to purchase. 1 cup = 10¢");
 
             string userInput;
 
@@ -291,7 +291,7 @@ namespace Lemonadestand
 
             Console.WriteLine("First, we have to make the lemonade!");
             Console.WriteLine("It takes 2 lemons, 4 sugars, and 4 ice to make a pitcher of lemonade.");
-            Console.WriteLine("1 lemon = 15¢. 1 sugar = 5¢. 1 ice = 10¢");
+            Console.WriteLine("1 lemon = 15¢. 1 sugar = 5¢. 1 ice = 10¢. 1 cup = 10¢. 1 pitcher = $2.");
             Console.WriteLine("1 lemonade pitcher = 90¢. 2 = $1.80. 3 = $2.70. 4 = $3.60. 5 = $4.50.");
             Console.WriteLine("Starting money: $" + wallet.money);
             Console.WriteLine("How much lemonade do you want to make? Remember to save enough money to buy pitchers and cups!");
@@ -360,10 +360,10 @@ namespace Lemonadestand
 
         public void SetPrice()
         {
-            int userInput;
+            double userInput;
 
-            Console.WriteLine("Set the price for the cups");
-            userInput = int.Parse(Console.ReadLine());
+            Console.WriteLine("Set the price for how many lemonade cups you want to sell!");
+            userInput = double.Parse(Console.ReadLine());
             for(int i = 0; i < cups.Count; i++)
             {
                 cups[i].priceToSell = userInput;

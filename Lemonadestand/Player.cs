@@ -277,7 +277,50 @@ namespace Lemonadestand
                 {
                     ChoosePitchers();
                 }
-
+            }
+            else if (userInput == "11")
+            {
+                Console.WriteLine("Cost = $1.10");
+                wallet.money -= 1.10;
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    ChoosePitchers();
+                }
+            }
+            else if (userInput == "12")
+            {
+                Console.WriteLine("Cost = $1.20");
+                wallet.money -= 1.20;
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    ChoosePitchers();
+                }
+            }
+            else if (userInput == "13")
+            {
+                Console.WriteLine("Cost = $1.30");
+                wallet.money -= 1.30;
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    ChoosePitchers();
+                }
+            }
+            else if (userInput == "14")
+            {
+                Console.WriteLine("Cost = $1.40");
+                wallet.money -= 1.40;
+                Console.WriteLine("Money left: $" + wallet.money);
+                bool ifBankrupt = wallet.CheckIfBankrupt();
+                if (ifBankrupt == true)
+                {
+                    ChoosePitchers();
+                }
             }
             else
             {
@@ -289,12 +332,12 @@ namespace Lemonadestand
         {
             string userInput;
 
-            Console.WriteLine("First, we have to make the lemonade!");
+            Console.WriteLine("\nFirst, we have to make the lemonade!");
             Console.WriteLine("It takes 2 lemons, 4 sugars, and 4 ice to make a pitcher of lemonade.");
-            Console.WriteLine("1 lemon = 15¢. 1 sugar = 5¢. 1 ice = 10¢. 1 cup = 10¢. 1 pitcher = $2.");
-            Console.WriteLine("1 lemonade pitcher = 90¢. 2 = $1.80. 3 = $2.70. 4 = $3.60. 5 = $4.50.");
+            Console.WriteLine("1 lemon = 15¢. 1 sugar = 5¢. 1 ice = 10¢.");
+            Console.WriteLine("Cost to make 1 lemonade pitcher = 90¢. 2 = $1.80. 3 = $2.70. 4 = $3.60. 5 = $4.50.");
             Console.WriteLine("Starting money: $" + wallet.money);
-            Console.WriteLine("How much lemonade do you want to make? Remember to save enough money to buy pitchers and cups!");
+            Console.WriteLine("\nHow much lemonade pitcher(s) do you want to make? Remember to save enough money to buy pitchers and cups!");
             userInput = Console.ReadLine();
 
             if (userInput == "1")

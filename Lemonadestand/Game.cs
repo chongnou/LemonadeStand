@@ -34,11 +34,12 @@ namespace Lemonadestand
 
             Display7DayForcast();
             forcast.Display7DayForcast();
-            
-            player.MakeLemonade();
 
             DisplayTodayForcast();
-            
+
+            player.MakeLemonade();
+
+           
             player.ChoosePitchersAndCups();
             player.SetPrice();
 
@@ -85,6 +86,25 @@ namespace Lemonadestand
             }
         }
 
+        public void Sugar()
+        {
+
+        }
+
+        public void Ice()
+        {
+
+        }
+
+        public void Lemons()
+        {
+
+        }
+
+        public void Cups()
+        {
+
+        }
 
     }
 }

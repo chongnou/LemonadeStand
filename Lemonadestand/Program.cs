@@ -8,6 +8,14 @@ namespace Lemonadestand
 {
     class Program
     {
+        public Game Game
+        {
+            get => default(Game);
+            set
+            {
+            }
+        }
+
         static void Main(string[] args)
         {
             Game rungame = new Game();

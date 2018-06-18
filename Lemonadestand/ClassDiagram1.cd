@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="1..*">
+    <Position X="6.742" Y="4.65" Height="0.325" Width="0.7" />
+  </Comment>
+  <Comment CommentText="1..*">
+    <Position X="8.8" Y="4.675" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="1..*">
+    <Position X="4.733" Y="4.692" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="1..*">
+    <Position X="13.017" Y="0.5" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="1..*">
+    <Position X="4.025" Y="0.5" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="0..*">
+    <Position X="1.275" Y="4.684" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="1..*">
+    <Position X="3.167" Y="5.442" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="1..*">
+    <Position X="1.233" Y="1.634" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="0..*">
+    <Position X="11.025" Y="3.45" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="0..*">
+    <Position X="12.525" Y="3.45" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="0..*">
+    <Position X="14.05" Y="3.459" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="0..*">
+    <Position X="11.025" Y="5.959" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="0..*">
+    <Position X="12.517" Y="5.95" Height="0.291" Width="0.7" />
+  </Comment>
+  <Class Name="Lemonadestand.Program">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Game" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Lemonadestand.Game">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAiAQBAIAACAAAAAggABAAJDAAAAARAAQAAQAAUAA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Items" />
+      <Property Name="Customer" />
+      <Property Name="Player" />
+      <Property Name="Forcast" />
+      <Property Name="Weather" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Lemonadestand.Player">
+    <Position X="4" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAhCAAAAAAAAAABAAAAIAAAABAAAAAAAAAAAAAAAQg=</HashCode>
+      <FileName>Player.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Cups" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Lemonadestand.Customer">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAIAAAAAAAQAAAAAAgAAAA=</HashCode>
+      <FileName>Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lemonadestand.Items">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lemonadestand.Weather">
+    <Position X="8" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAgAAAAAAAAAAAAAIAQAAAAAAAA=</HashCode>
+      <FileName>Weather.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lemonadestand.Forcast">
+    <Position X="2.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAUAAIAACAAAAAAAAAAACAAJBCAIAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Forcast.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Weather" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Lemonadestand.Cups">
+    <Position X="10.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cups.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lemonadestand.Ice">
+    <Position X="11.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lemonadestand.Lemons">
+    <Position X="13.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lemons.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lemonadestand.Pitcher">
+    <Position X="11.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pitcher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lemonadestand.Sugar">
+    <Position X="10.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sugar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lemonadestand.Wallet">
+    <Position X="6" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAEAAQAAAgAgAAAAAAQAAEAA=</HashCode>
+      <FileName>Wallet.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Player" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

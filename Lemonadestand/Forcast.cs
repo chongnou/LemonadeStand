@@ -20,6 +20,14 @@ namespace Lemonadestand
             weather.SetTemp();
         }
 
+        public Weather Weather
+        {
+            get => default(Weather);
+            set
+            {
+            }
+        }
+
         public void Display7DayForcast()
         {
             Monday();

@@ -23,6 +23,46 @@ namespace Lemonadestand
             items = new Items();
         }
 
+        public Items Items
+        {
+            get => default(Items);
+            set
+            {
+            }
+        }
+
+        public Customer Customer
+        {
+            get => default(Customer);
+            set
+            {
+            }
+        }
+
+        public Player Player
+        {
+            get => default(Player);
+            set
+            {
+            }
+        }
+
+        public Forcast Forcast
+        {
+            get => default(Forcast);
+            set
+            {
+            }
+        }
+
+        public Weather Weather
+        {
+            get => default(Weather);
+            set
+            {
+            }
+        }
+
         public void RunGame()
         {
             

@@ -10,11 +10,19 @@ namespace Lemonadestand
     {
         public double money;
         bool bankrupt;
-        double amount;
+        public double amount;
 
         public Wallet()
         {
             money = 10;
+        }
+
+        public Player Player
+        {
+            get => default(Player);
+            set
+            {
+            }
         }
 
         public void UpdateFunds(double amount)

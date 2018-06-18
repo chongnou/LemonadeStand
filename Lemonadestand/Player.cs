@@ -17,6 +17,14 @@ namespace Lemonadestand
             cups = new List<Cups>();
         }
 
+        public Cups Cups
+        {
+            get => default(Cups);
+            set
+            {
+            }
+        }
+
         public void ChoosePitchersAndCups()
         {
             ChoosePitchers();

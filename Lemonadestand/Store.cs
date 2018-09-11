@@ -74,7 +74,7 @@ namespace Lemonadestand
                 wallet.money = wallet.money - (restockChoice * .50);
                 UserInterface.DisplayMessage("You restocked with Lemons");
                 UserInterface.DisplayMessage("You have " + inventory.lemon + " Lemons");
-                UserInterface.DisplayMessage("you have $" + wallet.money + " left in you wallet.");
+                UserInterface.DisplayMessage("You have $" + wallet.money + " left in you wallet.");
                 return inventory.lemon;
             }
 
@@ -101,7 +101,7 @@ namespace Lemonadestand
                 wallet.money = wallet.money - (restockChoice * .25);
                 UserInterface.DisplayMessage("You restocked with Ice");
                 UserInterface.DisplayMessage("You have " + inventory.ice + " servings of Ice.");
-                UserInterface.DisplayMessage("you have $" + wallet.money + " left in you wallet.");
+                UserInterface.DisplayMessage("You have $" + wallet.money + " left in you wallet.");
                 return inventory.ice;
             }
 
@@ -128,7 +128,7 @@ namespace Lemonadestand
                 wallet.money = wallet.money - (restockChoice * .10);
                 UserInterface.DisplayMessage("You restocked with Suger");
                 UserInterface.DisplayMessage("You have " + inventory.suger + " servings of Suger");
-                UserInterface.DisplayMessage("you have $" + wallet.money + " left in you wallet.");
+                UserInterface.DisplayMessage("You have $" + wallet.money + " left in you wallet.");
                 return inventory.suger;
             }
 
@@ -155,7 +155,7 @@ namespace Lemonadestand
                 wallet.money = wallet.money - (restockChoice * .50);
                 UserInterface.DisplayMessage("You restocked with Cups");
                 UserInterface.DisplayMessage("You have " + inventory.cup + " Cups");
-                UserInterface.DisplayMessage("you have $" + wallet.money + " left in you wallet.");
+                UserInterface.DisplayMessage("You have $" + wallet.money + " left in you wallet.");
                 return inventory.cup;
             }
 

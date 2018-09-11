@@ -21,9 +21,9 @@ namespace Lemonadestand
         //Methods
         public void GetPlayerName()
         {
-            User_Interface.DisplayMessage("Enter Your Name: ");
+            UserInterface.DisplayMessage("What is your Name? ");
 
-            nameInput = User_Interface.GetUserInput();
+            nameInput = UserInterface.GetUserInput();
             name = nameInput.ToUpper();
         }
     }

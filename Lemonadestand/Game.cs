@@ -49,7 +49,7 @@ namespace Lemonadestand
         {
 
             playerOne.GetPlayerName();
-            User_Interface.DisplayMessage("Welcome To The Game: " + playerOne.name);
+            UserInterface.DisplayMessage("Welcome To Lemonade Stand " + playerOne.name);
             weatherTodayResult = weatherToday.TodaysWeather();
             DisplayWeatherToday(weatherTodayResult);
             playerMoney = money.DisplayMoneyInWallet();
@@ -61,29 +61,23 @@ namespace Lemonadestand
             numberOfCustomersToday = todaysCustomer.CustomersToday(weatherTodayResult);
             buyingCustomersWeather = todaysCustomer.DetermineWillBuyWeather(weatherTodayResult);
             buyTodayWeatherPrice = todaysCustomer.DetermineWillBuyPrice(pricePerCup);
-
-
-
+            
         }
 
         public void DisplayWeatherToday(double weatherTodayResult)
         {
             if (weatherTodayResult == 1)
             {
-                User_Interface.DisplayMessage("Todays Weather is 'Sunny and Hot'");
+                UserInterface.DisplayMessage("Todays Weather is 'Sunny and Hot'");
             }
             else if (weatherTodayResult == 2)
             {
-                User_Interface.DisplayMessage("Todays Weather is 'Cloudy and Cold'");
+                UserInterface.DisplayMessage("Todays Weather is 'Cloudy and Cold'");
             }
             else
             {
-                User_Interface.DisplayMessage("Todays Weather is 'Rainy'");
+                UserInterface.DisplayMessage("Todays Weather is 'Rainy'");
             }
-
         }
-
-
-
     }
 }

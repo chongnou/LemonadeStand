@@ -6,145 +6,84 @@ using System.Threading.Tasks;
 
 namespace Lemonadestand
 {
-    public class Game
+    class Game
     {
-        public Weather weather;
-        public Forcast forcast;
-        public Player player;
-        public List<Customer> customers;
-        public Items items;
+        // Member Variables
+        Random rnd;
+        Day weatherToday;
+        public double weatherTodayResult;
+        Player playerOne;
+        Customer todaysCustomer;
+        Customer buyingTodayWeather;
+        Customer buyingCustomer;
+        public double buyingCustomersWeather;
+        public double numberOfCustomersToday;
+        Store chargePrice;
+        public double pricePerCup;
+        Wallet money;
+        public double playerMoney;
+        Store buySupplies;
+        public double getSupplies;
+        public double buyTodayWeatherPrice;
 
+
+        //Constructor
         public Game()
+
         {
-            weather = new Weather();
-            forcast = new Forcast();
-            player = new Player();
-            customers = new List<Customer>();
-            items = new Items();
+            rnd = new Random();
+            weatherToday = new Day(rnd);
+            playerOne = new Player();
+            todaysCustomer = new Customer(rnd);
+            buyingTodayWeather = new Customer(rnd);
+            buyingCustomer = new Customer(rnd);
+            chargePrice = new Store();
+            money = new Wallet();
+            buySupplies = new Store();
+
         }
 
-        public Items Items
+
+        //Member Methods
+        public void StartGame()
         {
-            get => default(Items);
-            set
+
+            playerOne.GetPlayerName();
+            User_Interface.DisplayMessage("Welcome To The Game: " + playerOne.name);
+            weatherTodayResult = weatherToday.TodaysWeather();
+            DisplayWeatherToday(weatherTodayResult);
+            playerMoney = money.DisplayMoneyInWallet();
+            getSupplies = buySupplies.BuyLemon();
+            getSupplies = buySupplies.BuyIce();
+            getSupplies = buySupplies.BuySuger();
+            getSupplies = buySupplies.BuyCup();
+            pricePerCup = chargePrice.InputPrice();
+            numberOfCustomersToday = todaysCustomer.CustomersToday(weatherTodayResult);
+            buyingCustomersWeather = todaysCustomer.DetermineWillBuyWeather(weatherTodayResult);
+            buyTodayWeatherPrice = todaysCustomer.DetermineWillBuyPrice(pricePerCup);
+
+
+
+        }
+
+        public void DisplayWeatherToday(double weatherTodayResult)
+        {
+            if (weatherTodayResult == 1)
             {
+                User_Interface.DisplayMessage("Todays Weather is 'Sunny and Hot'");
             }
-        }
-
-        public Customer Customer
-        {
-            get => default(Customer);
-            set
+            else if (weatherTodayResult == 2)
             {
+                User_Interface.DisplayMessage("Todays Weather is 'Cloudy and Cold'");
             }
-        }
-
-        public Player Player
-        {
-            get => default(Player);
-            set
+            else
             {
+                User_Interface.DisplayMessage("Todays Weather is 'Rainy'");
             }
-        }
-
-        public Forcast Forcast
-        {
-            get => default(Forcast);
-            set
-            {
-            }
-        }
-
-        public Weather Weather
-        {
-            get => default(Weather);
-            set
-            {
-            }
-        }
-
-        public void RunGame()
-        {
-            
-            DisplayWelcome();
-
-            weather.SetTemp();
-            weather.SetCondition();
-            DisplayWeather();
-
-            Display7DayForcast();
-            forcast.Display7DayForcast();
-
-            DisplayTodayForcast();
-
-            player.MakeLemonade();
-
-           
-            player.ChoosePitchersAndCups();
-            player.SetPrice();
-
-            GenerateCustomers();
-            Customer customer = new Customer();
-            customer.CustomerBuying(weather, customers, player);
-            
-        }
-
-        public void DisplayWelcome()
-        {
-            Console.WriteLine("You are playing Lemonade Stand!");
-            Console.WriteLine("Try to make as much money as you can!");
-            Console.ReadLine();
-            Console.Clear();
 
         }
 
-        public void DisplayWeather()
-        {
-            Console.WriteLine("Today's forcast is: " + weather.temperature + " and " + weather.condition);
-            Console.ReadLine();
 
-        }
-        
-        public void Display7DayForcast()
-        {
-
-            Console.WriteLine("The forcast for the next 7 days are: \n");
-
-        }
-
-        public void DisplayTodayForcast()
-        {
-            Console.WriteLine("\nToday's forcast: " + weather.temperature + " and " + weather.condition);
-        }
-
-        public void GenerateCustomers()
-        {
-            for(int i = 0; i < 50; i++)
-            {
-                Customer customer = new Customer();
-                customers.Add(customer);
-            }
-        }
-
-        public void Sugar()
-        {
-
-        }
-
-        public void Ice()
-        {
-
-        }
-
-        public void Lemons()
-        {
-
-        }
-
-        public void Cups()
-        {
-
-        }
 
     }
 }

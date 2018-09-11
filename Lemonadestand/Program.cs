@@ -8,18 +8,15 @@ namespace Lemonadestand
 {
     class Program
     {
-        public Game Game
-        {
-            get => default(Game);
-            set
-            {
-            }
-        }
-
         static void Main(string[] args)
         {
-            Game rungame = new Game();
-            rungame.RunGame();
+            Game mygame = new Game();
+            mygame.StartGame();
+            //Customer mycustomer = new Customer();
+            //mycustomer.CustomersToday();
+            //mycustomer.DetermineWillBuy();
+
+            Console.ReadKey();
         }
     }
 }
